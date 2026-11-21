@@ -1,0 +1,123 @@
+
+/* ===== Diseño moderno para Flashcards ===== */
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #eef2ff;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.aplicacion {
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 0 18px;
+}
+
+.titulo {
+  text-align: center;
+  color: #312e81;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* Ocultar elementos */
+.oculto {
+  display: none;
+}
+
+/* Barra de progreso */
+.progreso {
+  margin-bottom: 18px;
+}
+
+.progreso-pista {
+  position: relative;
+  height: 14px;
+  background: #c7d2fe;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progreso-relleno {
+  height: 100%;
+  background: linear-gradient(90deg, #63acf1, #556df7);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progreso-porcentaje {
+  display: none;
+}
+
+.progreso-contador {
+  display: block;
+  text-align: right;
+  font-size: 13px;
+  color: #4b5563;
+  margin-top: 6px;
+}
+
+/* Tarjeta de estudio */
+.tarjeta {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.15);
+  min-height: 220px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #e0e7ff;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-pregunta {
+  font-size: 23px;
+  color: #3730a3;
+  margin: 0;
+  font-weight: bold;
+}
+
+.tarjeta-respuesta {
+  line-height: 1.6;
+  margin: 0;
+  color: #374151;
+  font-size: 17px;
+}
+
+/* Botones de navegación */
+.navegacion {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.boton-nav {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 9px;
+  background: #ddd6fe;
+  color: #4c1d95;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.boton-nav:hover {
+  background: #c4b5fd;
+  transform: translateY(-2px);
+}
+
+/* Botón para revelar respuesta */
+.boton-voltear {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+.boton-voltear:hover {
+  background: #6d28d9;
+}

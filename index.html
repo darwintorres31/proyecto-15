@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Darwin Acevedo">
+    <title>Tarjetas-proyecto 15</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+  <body>
+    <main class="aplicacion">
+      <h1 class="titulo">Flashcards</h1>
+
+      <!-- Barra de progreso: JavaScript modifica el ancho del relleno y los textos -->
+      <div class="progreso">
+        <div class="progreso-pista">
+          <div class="progreso-relleno" id="progresoRelleno"></div>
+          <span class="progreso-porcentaje" id="progresoPorcentaje"></span>
+        </div>
+        <span class="progreso-contador" id="progresoContador"></span>
+      </div>
+
+      <!-- Tarjeta y controles -->
+      <section class="tarjeta-contenedor">
+        <div class="tarjeta">
+          <h2 class="tarjeta-pregunta" id="tarjetaPregunta"></h2>
+          <p class="tarjeta-respuesta oculto" id="tarjetaRespuesta"></p>
+        </div>
+
+        <nav class="navegacion">
+          <button class="boton-nav" id="botonAnterior">‹ Anterior</button>
+          <button class="boton-nav boton-voltear" id="botonVoltear">Mostrar respuesta</button>
+          <button class="boton-nav" id="botonSiguiente">Siguiente ›</button>
+        </nav>
+      </section>
+    </main>
+
+    <!-- Primero los datos y luego la lógica (scripts normales, funciona al abrir el archivo directamente) -->
+    <script src="tarjetas.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
